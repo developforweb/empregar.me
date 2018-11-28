@@ -1,0 +1,70 @@
+page-intro {
+  .tamanho_img{
+    width: 300px;}
+  }
+  page-splash {
+
+    ion-content{
+    background: url(../assets/imgs/splash_background000.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+    ion-slides{
+        height: 300px;
+    }
+    ion-slide, .div_img{
+        position: relative;
+    }
+    div.title{
+      position: absolute;
+      top: 140px;
+      left: calc(100% - 130px);
+      width: 260px;
+      text-align: center;
+  }
+    ion-slides ion-slide:first-child img{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+    .arrow_prev,
+    .arrow_next{
+        position: absolute;
+        font-size: 30px;
+        top: 40%;
+        cursor: pointer;
+        z-index: 99;
+    }
+    .arrow_prev{
+        left: 10px;
+    }
+    .arrow_next{
+        right: 10px;
+    }
+    .div_img{
+        height: calc(50% - 150px) !important;
+        text-align: center;
+    }
+    .div_img img{
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+    .div_img .title{
+        font-size: 20px
+    }
+    @media (min-width: 500px) {
+        ion-content{
+            padding-top: 100px;
+        }
+        ion-slides{
+            height: calc(100% - 150px) !important;
+        }
+        .buttons{
+            max-width: 500px;
+            margin: auto;
+        }
+    }
+  }

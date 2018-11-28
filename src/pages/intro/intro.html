@@ -1,0 +1,30 @@
+<ion-content>
+    <img class="img_logo" src="assets/imgs/empregar_logo.png"/>
+    <ion-slides pager id='slides'>
+      <ion-slide>
+          <div class="title">Poste vagas de emprego<br/> pelo seu celular em minutos</div>
+        <img src="assets/imgs/slide1.jpg" id='img' />
+      </ion-slide>
+      <!-- (window:resize)="onResize($event)" -->
+      <ion-slide>
+        <div class="title">Reduza a sua contratação para minutos e preencha suas vagas com candidatos pelo seu telefone em apenas alguns toques</div>
+        <img src="../../assets/imgs/slide2.jpg" id='img' />
+      </ion-slide>
+      <ion-slide>
+        <div class="title">Converse em tempo real e entreviste seus candidatos ao vivo!</div>
+        <img src="assets/imgs/slide3.jpg" id='img' />
+      </ion-slide>
+    </ion-slides>
+      <div class="buttons" padding>
+          <div text-center><p style="margin-top:0px;color:#CC6400;font-size:20px;">
+            Você é uma empresa e está a procura de um candidato para sua <strong>DE EMPREGO?</strong>
+            <br>Ou você é um candidato em busca de uma oportunidade de <strong>DE TRABALHO?</strong>
+            <br>Cadastre-se agora mesmo e consiga o que deseja!</p>
+          </div>
+          <ion-row>
+            <ion-col padding>
+              <button ion-button full round color="primary" (click)="avancar()">Vamos começar?</button>
+            </ion-col>
+          </ion-row>
+      </div>
+</ion-content>
