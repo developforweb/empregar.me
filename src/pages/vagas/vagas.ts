@@ -25,9 +25,12 @@ export class VagasPage {
   morePagesAvailable: boolean = true;
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,
-    public fire: AngularFireAuth, public toastCtrl: ToastController,
-    public loadingCtrl: LoadingController, public wordpressService: WordpressService) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public fire: AngularFireAuth,
+              public toastCtrl: ToastController,
+              public loadingCtrl: LoadingController,
+              public wordpressService: WordpressService) {
 
     }//fim constructor
 
