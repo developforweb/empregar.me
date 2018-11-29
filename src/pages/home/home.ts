@@ -50,7 +50,7 @@ export class HomePage {
 
   //fim do metodo de esconder tab
   entrar(){
-    let toast = this.toastCtrl.create({duration: 3000, position: 'bottom'});
+    let toast = this.toastCtrl.create({duration: 3000, position: 'top'});
 
     this.fire.auth.signInWithEmailAndPassword(this.email.value, this.password.value)
     .then(data =>{
@@ -63,13 +63,13 @@ export class HomePage {
     })
     .catch((error: any)=> {
       if(error.code == 'auth/invalid-email'){
-        toast.setMessage('O e-mail é inválido.')
+        toast.setMessage('O e-mail é inválido!')
       }else if(error.code == 'auth/user-disabled'){
-        toast.setMessage('Usuario desabilitado.')
+        toast.setMessage('Usuario desabilitado!')
       }else if(error.code == 'auth/user-not-found'){
-        toast.setMessage('Usuario não encontrado')
+        toast.setMessage('Usuario não encontrado!')
       }else if(error.code == 'auth/wrong-password'){
-        toast.setMessage('Senha inválida.')
+        toast.setMessage('Senha inválida!')
       }
       toast.present();
 
@@ -87,15 +87,26 @@ export class HomePage {
     this.navCtrl.push(RecuperarPage);
   }
   loginFacebook(){
+    let toast = this.toastCtrl.create({duration: 3000, position: 'top'});
     this.fire.auth.signInWithPopup(new firebase.auth.FacebookAuthProvider())
     .then( res =>{
       //console.log(res);
       this.navCtrl.setRoot(TabsPage);
     })
-  }
+    .catch((error:any)=>{
+      if(error.code == 'auth/account-exists-with-different-credential'){
+        toast.setMessage('O email já existe em outra conta com senha diferente!')
+      }else if(error.code == 'error.email'){
+        toast.setMessage('O e-mail já existe em outra conta!')
+      }else if(error.code == 'error.credential'){
+        toast.setMessage('Usuario ou Senha incorreta!')
+      }
+      toast.present();
+    }
+    )};
   visitante(){
 
-    let toast = this.toastCtrl.create({duration: 2000, position: 'bottom'});
+    let toast = this.toastCtrl.create({duration: 3000, position: 'top'});
     this.fire.auth.signInAnonymously()
     .then(data =>{
 

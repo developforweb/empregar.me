@@ -9,7 +9,7 @@ import { HttpModule } from '@angular/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { DicasPage } from '../pages/dicas/dicas';
+import { VagasPage } from '../pages/vagas/vagas';
 import { RegisterPage } from '../pages/register/register';
 import { RecuperarPage } from '../pages/recuperar/recuperar';
 
@@ -21,18 +21,18 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { IntroPage } from '../pages/intro/intro';
 
   const firebaseConfig  = {
-    apiKey: "AIzaSyCXgqvDBvrlWNdXkOpJLm76FDOl7WPtPv4",
-    authDomain: "projetomobile-bc080.firebaseapp.com",
-    databaseURL: "https://projetomobile-bc080.firebaseio.com",
-    projectId: "projetomobile-bc080",
-    storageBucket: "projetomobile-bc080.appspot.com",
-    messagingSenderId: "865101741877"
+    apiKey: "AIzaSyBwKPDDOki3UUh3UxQEQUckkrobH5UJWqU",
+    authDomain: "empregarme.firebaseapp.com",
+    databaseURL: "https://empregarme.firebaseio.com",
+    projectId: "empregarme",
+    storageBucket: "empregarme.appspot.com",
+    messagingSenderId: "315416868042"
   };
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    DicasPage,
+    VagasPage,
     RegisterPage,
     RecuperarPage,
     ProfilePage,
@@ -51,7 +51,7 @@ import { IntroPage } from '../pages/intro/intro';
   entryComponents: [
     MyApp,
     HomePage,
-    DicasPage,
+    VagasPage,
     RegisterPage,
     RecuperarPage,
     ProfilePage,

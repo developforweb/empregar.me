@@ -17,7 +17,7 @@ export class RecuperarPage {
   }
 
 recuperar(){
-  let toast = this.toastCtrl.create({duration: 3000, position: 'bottom'});
+  let toast = this.toastCtrl.create({duration: 3000, position: 'top'});
 
   this.fire.auth.sendPasswordResetEmail(this.emailDigitado.value)
   .then(() =>{

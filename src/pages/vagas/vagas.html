@@ -1,8 +1,7 @@
-zz
 <ion-header>
 
   <ion-navbar color="primary">
-    <ion-title>Dicas</ion-title>
+    <ion-title>Vagas de Emprego</ion-title>
     <ion-buttons end>
       <button ion-button icon-only (click)="logout()">
         <ion-icon class="toolbar-icon" name="log-out"></ion-icon>
@@ -26,10 +25,10 @@ zz
     </div>
     <ion-card-content>
       <ion-card-title [innerHTML]="post.title.rendered">
-        Titutlo da Postagem
+        Título da Postagem
       </ion-card-title>
 
-      <p [innerHTML]="post.excerpt.rendered">descrissão do bagulho</p>
+      <p [innerHTML]="post.excerpt.rendered">Descrição das Vagas</p>
     </ion-card-content>
 
     <ion-row no-padding>
@@ -40,7 +39,7 @@ zz
       </ion-col>
       <ion-col text-right>
         <button ion-button small color="primary" (click)="postTapped($event, post)" icon-start >
-          Leia mais...
+          Candidatar-se...
         </button>
       </ion-col>
     </ion-row>
@@ -49,5 +48,4 @@ zz
   <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Carregando...">
   </ion-infinite-scroll-content>
 </ion-infinite-scroll>
-
   </ion-content>

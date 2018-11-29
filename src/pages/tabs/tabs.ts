@@ -1,5 +1,5 @@
 import { ProfilePage } from './../profile/profile';
-import { DicasPage } from './../dicas/dicas';
+import { VagasPage } from './../vagas/vagas';
 
 import { Component } from '@angular/core';
 import { IonicPage } from 'ionic-angular';
@@ -11,7 +11,7 @@ import { IonicPage } from 'ionic-angular';
 })
 export class TabsPage {
 
-  DicasPage = DicasPage;
+  VagasPage = VagasPage;
   ProfilePage = ProfilePage;
 
 

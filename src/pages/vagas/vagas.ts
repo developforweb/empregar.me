@@ -8,7 +8,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
 
 
 /**
- * Generated class for the DicasPage page.
+ * Generated class for the VagasPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -16,10 +16,10 @@ import { AngularFireAuth } from 'angularfire2/auth';
 
 @IonicPage()
 @Component({
-  selector: 'page-dicas',
-  templateUrl: 'dicas.html',
+  selector: 'page-vagas',
+  templateUrl: 'vagas.html',
 })
-export class DicasPage {
+export class VagasPage {
 
   posts: Array<any> = new Array<any>();
   morePagesAvailable: boolean = true;
