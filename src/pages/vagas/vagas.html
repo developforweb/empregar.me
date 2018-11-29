@@ -21,7 +21,7 @@
 
   <ion-card *ngFor="let post of posts">
     <div>
-      <img [src]="post.better_featured_image.source_url" />
+      <img src="{{post._link['wp:featuredmedia'][1].source_url}}" />
     </div>
     <ion-card-content>
       <ion-card-title [innerHTML]="post.title.rendered">
