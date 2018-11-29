@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/developforweb/empregar.me.svg?branch=master)](https://travis-ci.com/developforweb/empregar.me)
 # Empregar.me - Aplicativo para Gerenciamento de Vagas de Emprego
 
 ## Lista de Funcionalidades
