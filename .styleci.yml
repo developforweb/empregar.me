@@ -1,0 +1,18 @@
+ts:
+  tab-width: 4
+  use-tabs: false
+  print-width: 120
+  double-quotes: false
+  trailing-commas: es5
+  semicolons: true
+  arrow-parens: avoid
+  bracket-spacing: true
+  finder:
+    exclude:
+      - resources
+      - node_modules
+      - .vscode
+      - .git
+    name:
+      - "*.ts"
+      - "*.scss"

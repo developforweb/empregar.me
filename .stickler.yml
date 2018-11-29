@@ -1,7 +1,0 @@
-linters:
-  tslint: {  }
-  csslint: {  }
-files:
-  ignore:
-    - 'bower_components/*'
-    - 'node_modules/*'
