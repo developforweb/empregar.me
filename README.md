@@ -1,4 +1,4 @@
-# Contrate Me - Aplicativo para Gerenciamento de Vagas de Emprego
+# Empregar.me - Aplicativo para Gerenciamento de Vagas de Emprego
 
 ## Lista de Funcionalidades
   - Prontas:
@@ -23,7 +23,7 @@
 
 ## Para executar (How to Use - Windows)
 ### 1 - Download
-  - Efetue o download do repositório utilizando o comando "git clone https://github.com/andersusilva/contrateme.git" no terminal bash.
+  - Efetue o download do repositório utilizando o comando "git clone https://github.com/developforweb/empregar.me.git" no terminal bash.
 ### 2 - Instalação
   - Utilize no terminal NodeJS ou CMD o comando "cd" para navegar até a pasta onde foi clonada o diretório git;
   - Execute os comandos para instalar os requisitos necessários:
@@ -54,4 +54,4 @@ $ ionic cordova run android
 
 # Licença
   - Todo o conteúdo presente neste diretório, estão de acordo com a licença [MIT] 
-  - https://github.com/andersusilva/contrateme/blob/develop/LICENSE
+  - https://github.com/andersusilva/empregar.me/LICENSE
