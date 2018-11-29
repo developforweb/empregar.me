@@ -1,0 +1,20 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  slack:
+    template:
+      - "Build *<%{build_url}|#%{build_number}>* (<%{compare_url}|%{commit}>) of %{repository_slug}@%{branch} "
+      - "by _%{author}_ %{result} in %{duration}"
+node_js:
+  - "5"
+  - "4"
+before_script:
+  - npm prune
+  #  - ember test --server
+after_success: npm run coverage
+branches:
+  except:
+    - "/^v\\d+\\.\\d+\\.\\d+$/"

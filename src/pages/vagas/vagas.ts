@@ -54,7 +54,7 @@ export class VagasPage {
 
 
   logout(){
-    let toast = this.toastCtrl.create({duration: 2000, position: 'bottom'});
+    let toast = this.toastCtrl.create({duration: 2000, position: 'top'});
 
     this.fire.auth.signOut();
     toast.setMessage('Desconectado com sucesso!');
