@@ -6,18 +6,20 @@
     • Menu Lateral;
     • Menu Horizontal;
     • Páginas Principais;
-    • Autenticação (ainda sem firebase);
+    • Autenticação;
+    • Components;
+    • Providers;
+    • Etc...;
   - Pendentes:
-    • Implementação do Firebase;
-    • Demais telas e funcionalidades;
-    • Components
+    • Correções de pequenos erros;
+    • TryCatch de algumas excessões;
+    • Ajustes nas vagas tragas do API Wordpress;
+    • Otimização da consulta JSON.
 ## Requisitos Necessários
   - NodeJS
   - NPM
-  - Ionic CLI
+  - Ionic
   - Cordova
-  - Bower
-  - Ember CLI
   - Visual Studio Code (para edição dos arquivos)
   - GIT (para atualização dos arquivos)
 
@@ -29,11 +31,10 @@
   - Execute os comandos para instalar os requisitos necessários:
   - npm install -g npm
   - npm install -g cordova ionic
-  - npm install -g bower
   
 ### 3 - Subir o servidor localmente
   - Após a instalação utilize o comando:
-  - ionic serve
+  - ionic serve --lab
   - para testar o sistema em ambiente local.
 
 ## Para executar no Linux (How to Use - Linux with the Ionic CLI):
@@ -47,7 +48,7 @@
 $ ionic cordova platform add ios
 $ ionic cordova platform add android
 
-### Run app
+### Run app (Build)
 
 $ ionic cordova run ios
 $ ionic cordova run android
